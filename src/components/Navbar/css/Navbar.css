@@ -1,0 +1,91 @@
+/* 
+Create variables for color 
+ - Green theme
+
+*/
+:root {
+    --background-color: #FFFFFF;
+    
+    --navbar-color: #0E1726;
+    --navbar-color-translucent: rgba(14, 23, 38, 0.8);
+    --navbar-scroll-shadow-color: #000000;
+
+    --navbar-button-color: #0E1726;
+    --navbar-button-color-hover: #203f68;
+    --navbar-button-box-shadow-color: rgba(255, 255, 255, 0.3);
+    
+    --navbar-login-button-color: #0E1726;
+
+    --info-button-color: #1E88E5;
+}
+
+:root::-webkit-scrollbar {
+    display: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-wrapper {
+    background-color: var(--navbar-color);
+    height: 80px;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Add box shadow on scroll */
+.navbar-wrapper-scrolled {
+    box-shadow: 0 0 20px var(--navbar-scroll-shadow-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+
+    /* align to right side */
+    margin-left: auto;
+
+    padding-right: 40px;
+}
+
+.navbar-item {
+    display: flex;
+    align-items: center;
+    height: 60%;
+    padding: 0 20px;
+    color: #fff;
+    font-size: 16px;
+    border: 1px solid #fff;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: var(--navbar-button-color);
+    border-radius: 10%;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-item:hover {
+    background-color: var(--navbar-button-color-hover);
+    box-shadow: 0 0 10px var(--navbar-button-box-shadow-color);
+    border-radius: 15%;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-item-button {
+    cursor: pointer;
+    background-color: var(--navbar-login-button-color);
+    border-radius: 0;
+}
+
+.navbar-item-button:hover {
+    border-radius: 0;
+}
+

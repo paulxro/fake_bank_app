@@ -1,0 +1,89 @@
+.login-form-wrapper {
+    font-family: 'Advent Pro';
+    border: 2px solid var(--navbar-color);
+    width: 40%;
+    height: 40%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+    box-shadow: 0 0 10px var(--navbar-scroll-shadow-color);
+
+}
+
+.login-form-info-section {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.login-form-info-username {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form-info-password {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form-input-label {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.login-form-input {
+    width: 80%;
+    height: 40px;
+    text-align: center;
+    font-size: larger;
+    outline: none;
+    border: 2px solid var(--navbar-color);
+    border-radius: 5px;
+}
+
+.login-form-input:focus {
+    border: 2px solid var(--navbar-button-color-hover);
+}
+
+.login-form-submit-wrapper {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form-valid-input-field {
+    border: 2px solid green;
+}
+
+.login-form-invalid-input-field {
+    border: 2px solid red;
+}
+
+.login-form-submit-button {
+    width: 60%;
+    height: 40%;
+    border-radius: 10px;
+    border: 1px solid var(--navbar-color);
+    background-color: var(--navbar-button-color);
+    color: white;
+    font-size: larger;
+}
+
+.login-form-submit-button:hover {
+    background-color: var(--navbar-button-color-hover);
+    box-shadow: 0 0 10px var(--navbar-button-box-shadow-color);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}

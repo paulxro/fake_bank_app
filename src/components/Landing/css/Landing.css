@@ -1,0 +1,61 @@
+.landing-page-wrapper {
+    font-family: 'Advent Pro';
+    top: 0;
+    left: 0;
+    background-image: url('../data/background-main.jpg');
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+    /* position: absolute; */
+}
+
+.landing-page-col-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+}
+
+.landing-page-left-col {
+    flex-grow: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.landing-page-left-col-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 60%;
+    background-color: var(--navbar-color-translucent);
+    box-shadow: 0 0 10px var(--navbar-scroll-shadow-color);
+    border-radius: 40px;
+}
+
+.landing-page-left-col-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    width: 80%;
+    height: 80%;
+}
+
+.landing-page-right-col {
+    flex-grow: 3;
+}
+
+.landing-page-login-form-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
